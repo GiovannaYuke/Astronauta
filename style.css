@@ -1,0 +1,137 @@
+/* estilo do jogo do astronauta */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0d1a;
+    background-image: url('img/fundo.jpg');
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- tela de login ----- */
+
+.caixa {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #4a5bd0;
+    border-radius: 10px;
+    padding: 30px;
+    width: 340px;
+    text-align: center;
+}
+
+.caixa h1 {
+    margin-bottom: 10px;
+}
+
+.caixa p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.caixa label {
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.caixa input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #4a5bd0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: #6a7cf0;
+}
+
+.dica {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* ----- tela do jogo ----- */
+
+.placar {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.tela {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    border: 2px solid #4a5bd0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('img/fundo.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#astronauta {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    height: 90px;
+}
+
+.obstaculo {
+    position: absolute;
+    bottom: 0;
+}
+
+/* mensagens de inicio e fim de jogo */
+
+.mensagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mensagem h2 {
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    margin-bottom: 15px;
+}
+
+.escondido {
+    display: none;
+}

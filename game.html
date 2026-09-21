@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do Astronauta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="placar">
+        <span>Jogador: <b id="nomeJogador"></b></span>
+        <span>Pontos: <b id="pontos">0</b></span>
+    </div>
+
+    <div class="tela" id="tela">
+        <img src="img/Astronauta.png" id="astronauta">
+
+        <div class="mensagem" id="telaInicio">
+            <h2>Pronto?</h2>
+            <p>Aperte <strong>ESPAÇO</strong> ou <strong>SETA PRA CIMA</strong> para pular os obstáculos.</p>
+            <button onclick="comecarJogo()">Começar</button>
+        </div>
+
+        <div class="mensagem escondido" id="telaFim">
+            <h2>Fim de jogo!</h2>
+            <p id="pontuacaoFinal"></p>
+            <button onclick="comecarJogo()">Jogar de novo</button>
+            <button onclick="location.href='index.html'">Trocar jogador</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
