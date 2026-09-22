@@ -10,6 +10,7 @@
     <div class="placar">
         <span>Jogador: <b id="nomeJogador"></b></span>
         <span>Pontos: <b id="pontos">0</b></span>
+        <span>Vidas: <span id="vidas"></span></span>
     </div>
 
     <div class="tela" id="tela">
@@ -17,14 +18,16 @@
 
         <div class="mensagem" id="telaInicio">
             <h2>Pronto?</h2>
-            <p>Aperte <strong>ESPAÇO</strong> ou <strong>SETA PRA CIMA</strong> para pular os obstáculos.</p>
-            <button onclick="comecarJogo()">Começar</button>
+            <p>Aperte <strong>ESPAÇO</strong> ou <strong>SETA PRA CIMA</strong> para pular.<br>
+               Aperte <strong>SETA PRA BAIXO</strong> para cair mais rápido.</p>
+            <button onclick="comecarJogo(false)">Começar (Normal)</button>
+            <button onclick="comecarJogo(true)">Modo Difícil</button>
         </div>
 
         <div class="mensagem escondido" id="telaFim">
             <h2>Fim de jogo!</h2>
             <p id="pontuacaoFinal"></p>
-            <button onclick="comecarJogo()">Jogar de novo</button>
+            <button onclick="comecarJogo(modoDificil)">Jogar de novo</button>
             <button onclick="location.href='index.html'">Trocar jogador</button>
         </div>
     </div>

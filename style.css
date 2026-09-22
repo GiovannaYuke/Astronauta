@@ -108,6 +108,22 @@ button:hover {
     bottom: 0;
 }
 
+.coracao {
+    height: 24px;
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+
+@keyframes piscar {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+.piscando {
+    animation: piscar 0.2s linear infinite;
+}
+
 /* mensagens de inicio e fim de jogo */
 
 .mensagem {
